@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     parser.add_argument('screen_name', type=str, help="Screen name of twitter user whose friends list you'd like to search against")
     parser.add_argument('-p', '--password', action='store', dest='password', help="Password of twitter account. Only necessary for destructive operation.")
-    parser.add_argument('-D', '--destructive', action='store_true', help="Act destructively. That is, unfollow those who match your search.")
+    parser.add_argument('-D', '--destructive', '--unfollow', action='store_true', help="Act destructively. That is, unfollow those who match your search.")
     parser.add_argument('terms', action='store', nargs='+', help="The case-insensitive terms you'd like to search descriptions for (e.g. 'SEO', 'social media').")
 
     args = parser.parse_args()
